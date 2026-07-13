@@ -1,5 +1,5 @@
 import React from 'react';
-import heroPhoto from '../assets/hero.png';
+import heroPhoto from '../assets/profile.png';
 
 export default function Hero() {
   const currentDate = new Date().toLocaleDateString('en-US', {
@@ -16,7 +16,7 @@ export default function Hero() {
           <span className="mono-tag">DRAFT_VER // 1.2.0</span>
           <span className="mono-tag">DATE_REF // {currentDate}</span>
         </div>
-        
+
         <h1 className="hero-title">
           Rohan<br />
           Kohalli.<br />
@@ -24,13 +24,13 @@ export default function Hero() {
         </h1>
 
         <p className="hero-sub">
-          Building robust web systems with React, Node.js, and Spring Boot. Specialized in server-side algorithms, secure role-based controls, and database design.
+          Building robust web systems with React and Node.js Specialized in server-side algorithms, secure role-based controls, and database design.
         </p>
 
         <div>
-          <a 
-            href="/Rohan_Kohalli_Resume.pdf" 
-            target="_blank" 
+          <a
+            href="/Rohan_Kohalli_Resume.pdf"
+            target="_blank"
             rel="noreferrer"
             className="theme-btn"
             style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '0.6rem 1.2rem', fontSize: '0.8rem' }}
