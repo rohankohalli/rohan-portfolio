@@ -14,20 +14,20 @@ export default function Header({ theme, toggleTheme }) {
       <div className="logo-cell">
         <a 
           href="#" 
-          className="nav-link" 
-          style={{ fontSize: '1.1rem', fontWeight: 700, letterSpacing: '-0.02em' }}
+          className="logo-link" 
           onClick={(e) => scrollToSection(e, 'hero')}
         >
-          ROHAN.
+          <span className="logo-dot"></span>
+          <span>ROHAN_KOHALLI</span>
         </a>
       </div>
       
       <nav className="nav-links-cell">
-        <a href="#about" className="nav-link" onClick={(e) => scrollToSection(e, 'about')}>01/ABOUT</a>
-        <a href="#projects" className="nav-link" onClick={(e) => scrollToSection(e, 'projects')}>02/WORK</a>
-        <a href="#experience" className="nav-link" onClick={(e) => scrollToSection(e, 'experience')}>03/EXPERIENCE</a>
-        <a href="#capabilities" className="nav-link" onClick={(e) => scrollToSection(e, 'capabilities')}>04/SKILLS</a>
-        <a href="#contact" className="nav-link" onClick={(e) => scrollToSection(e, 'contact')}>05/CONTACT</a>
+        <a href="#about" className="nav-link" onClick={(e) => scrollToSection(e, 'about')}>[ 01 // ABOUT ]</a>
+        <a href="#projects" className="nav-link" onClick={(e) => scrollToSection(e, 'projects')}>[ 02 // WORK ]</a>
+        <a href="#experience" className="nav-link" onClick={(e) => scrollToSection(e, 'experience')}>[ 03 // EXP ]</a>
+        <a href="#capabilities" className="nav-link" onClick={(e) => scrollToSection(e, 'capabilities')}>[ 04 // SKILLS ]</a>
+        <a href="#contact" className="nav-link" onClick={(e) => scrollToSection(e, 'contact')}>[ 05 // CONTACT ]</a>
       </nav>
 
       <div className="theme-toggle-cell">
@@ -40,7 +40,7 @@ export default function Header({ theme, toggleTheme }) {
           CV [PDF]
         </a>
         <button className="theme-btn" onClick={toggleTheme}>
-          MODE: {theme.toUpperCase()}
+          MODE // {theme === 'light' ? 'DARK' : 'LIGHT'}
         </button>
       </div>
     </header>

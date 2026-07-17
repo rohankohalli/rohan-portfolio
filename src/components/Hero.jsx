@@ -1,5 +1,4 @@
 import React from 'react';
-import heroPhoto from '../assets/profile.png';
 
 export default function Hero() {
   const currentDate = new Date().toLocaleDateString('en-US', {
@@ -12,11 +11,11 @@ export default function Hero() {
     <section id="hero" className="hero-section reveal-on-load delay-1">
       {/* Left Column: Copy & Metrics */}
       <div>
-        <div style={{ display: 'flex', gap: '2rem', alignItems: 'baseline', marginBottom: '1.5rem' }}>
-          <span className="mono-tag">DRAFT_VER // 1.2.0</span>
-          <span className="mono-tag">DATE_REF // {currentDate}</span>
+        <div style={{ display: 'flex', gap: '2rem', alignItems: 'baseline', marginBottom: '1.25rem' }}>
+          <span className="mono-tag">SYS_VER // 1.3.0</span>
+          <span className="mono-tag">REF_DATE // {currentDate}</span>
         </div>
-
+        
         <h1 className="hero-title">
           Rohan<br />
           Kohalli.<br />
@@ -24,18 +23,17 @@ export default function Hero() {
         </h1>
 
         <p className="hero-sub">
-          Building robust web systems with React and Node.js Specialized in server-side algorithms, secure role-based controls, and database design.
+          Building robust web systems with React, Node.js, and Spring Boot. Specialized in server-side algorithms, secure role-based access, and database schema design.
         </p>
 
         <div>
-          <a
-            href="/Rohan_Kohalli_Resume.pdf"
-            target="_blank"
+          <a 
+            href="/Rohan_Kohalli_Resume.pdf" 
+            target="_blank" 
             rel="noreferrer"
             className="theme-btn"
-            style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '0.6rem 1.2rem', fontSize: '0.8rem' }}
           >
-            <span>→ ACCESS RESUME [PDF]</span>
+            → ACCESS RESUME [PDF]
           </a>
         </div>
 
@@ -51,19 +49,32 @@ export default function Hero() {
           </div>
           <div className="metric-item">
             <span className="metric-val">15+</span>
-            <span className="metric-lbl">Core Technologies</span>
+            <span className="metric-lbl">Core Techs</span>
           </div>
         </div>
       </div>
 
-      {/* Right Column: Profile Photo */}
-      <div className="hero-photo-container">
-        <div className="photo-wrapper">
-          <img src={heroPhoto} alt="Rohan Kohalli" className="hero-photo" />
-        </div>
-        <span className="mono-tag" style={{ display: 'block', marginTop: '0.75rem', textAlign: 'center' }}>
-          FIG_01 // PROFILE_PHOTO.PNG
+      {/* Right Column: Understated Flat Hardware LCD */}
+      <div className="hero-lcd-container">
+        <span className="mono-tag" style={{ fontSize: '0.62rem', borderBottom: '1px solid var(--border-color)', paddingBottom: '0.4rem', display: 'block' }}>
+          [ SYSTEM_CONSOLE // INTERACTIVE_TE_SYS ]
         </span>
+        
+        <div className="lcd-screen">
+          <div>&gt; BOOTING PORTFOLIO_SHELL... OK</div>
+          <div>&gt; NET_PORT // 5173 // ACTIVE</div>
+          <div>&gt; INDEXED // 08_PROJECTS_READY</div>
+          <div>&gt; STACK // SPRINGBOOT_REACT_NODE</div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+            <span>&gt; HEARTBEAT // RESOLVED</span>
+            <span className="pulse-dot"></span>
+          </div>
+        </div>
+
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: '0.7rem' }}>
+          <span style={{ fontFamily: 'var(--font-mono)', opacity: 0.5 }}>STATUS // NOMINAL</span>
+          <span style={{ fontFamily: 'var(--font-mono)', opacity: 0.5 }}>DEVICE // RHK_SYS_V2</span>
+        </div>
       </div>
     </section>
   );

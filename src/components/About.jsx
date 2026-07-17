@@ -1,4 +1,5 @@
 import React from 'react';
+import profilePhoto from '../assets/profile.png';
 
 export default function About() {
   return (
@@ -8,7 +9,7 @@ export default function About() {
         <h2>01/ABOUT</h2>
       </div>
       
-      <div className="about-content">
+      <div className="about-content" style={{ gridColumn: 'span 5' }}>
         <p>
           I am a Full Stack Developer with a Bachelor of Engineering in Computer Science from Savitribai Phule Pune University. My core expertise lies in building fast, scalable web systems using JavaScript (React & Node.js), Java (Spring Boot), and relational/non-relational databases like MySQL and MongoDB.
         </p>
@@ -18,6 +19,20 @@ export default function About() {
         <p>
           I focus on writing clean, readable code and optimizing database structures to deliver highly performant user-centric applications.
         </p>
+      </div>
+
+      <div style={{ gridColumn: 'span 3', display: 'flex', justifyContent: 'flex-end' }}>
+        <div className="photo-specimen-card">
+          <span className="mono-tag" style={{ fontSize: '0.6rem', borderBottom: '1px solid var(--border-color)', paddingBottom: '0.3rem', display: 'block', opacity: 0.5 }}>
+            [ FIG_01 // PHOTO_REG ]
+          </span>
+          <div className="specimen-wrapper">
+            <img src={profilePhoto} alt="Rohan Kohalli" className="specimen-photo" />
+          </div>
+          <span className="mono-tag" style={{ fontSize: '0.62rem', display: 'block', textAlign: 'center', opacity: 0.5 }}>
+            SPECIMEN // ENG_RHK.JPG
+          </span>
+        </div>
       </div>
     </section>
   );

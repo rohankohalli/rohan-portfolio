@@ -68,16 +68,16 @@ export default function Contact() {
           Let’s collaborate. Reach out directly via email or check my digital footprints.
         </p>
 
-        <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.85rem', marginBottom: '1.5rem' }}>
-          rohan.kohalli@gmail.com
+        <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.82rem', marginBottom: '1.5rem', color: 'var(--accent-color)' }}>
+          [ EMAIL // rohan.kohalli@gmail.com ]
         </p>
 
         <div className="social-links">
           <a href="https://github.com/rohankohalli/" target="_blank" rel="noreferrer" className="social-item">
-            <span>GITHUB</span> <span className="social-arrow">↗</span>
+            <span>[ GITHUB ]</span> <span className="social-arrow">↗</span>
           </a>
           <a href="https://www.linkedin.com/in/rohan-kohalli/" target="_blank" rel="noreferrer" className="social-item">
-            <span>LINKEDIN</span> <span className="social-arrow">↗</span>
+            <span>[ LINKEDIN ]</span> <span className="social-arrow">↗</span>
           </a>
         </div>
       </div>
@@ -93,17 +93,19 @@ export default function Contact() {
             flexDirection: 'column', 
             justifyContent: 'center',
             alignItems: 'center',
-            borderRadius: '6px',
-            backgroundColor: 'rgba(24, 24, 27, 0.01)'
+            borderRadius: 0,
+            backgroundColor: 'rgba(var(--text-color), 0.005)'
           }}>
-            <span className="mono-tag" style={{ fontSize: '0.8rem', marginBottom: '0.75rem', color: '#16a34a' }}>TRANSMISSION // SUCCESS</span>
-            <p style={{ fontStyle: 'italic', fontSize: '1.05rem', marginBottom: '1.5rem', maxWidth: '450px' }}>
+            <span className="mono-tag" style={{ fontSize: '0.78rem', marginBottom: '0.75rem', color: 'var(--accent-color)' }}>
+              TRANSMISSION // SUCCESS
+            </span>
+            <p style={{ fontSize: '0.98rem', marginBottom: '1.5rem', maxWidth: '450px', lineHeight: '1.5' }}>
               Message logged successfully. I will review the transmission logs and follow up shortly.
             </p>
             <button 
               className="theme-btn" 
               onClick={() => setSubmitted(false)}
-              style={{ padding: '0.5rem 1rem' }}
+              style={{ padding: '0.45rem 0.9rem' }}
             >
               SEND ANOTHER MESSAGE
             </button>
@@ -112,13 +114,13 @@ export default function Contact() {
           <form className="minimal-form" onSubmit={handleSubmit}>
             {error && (
               <div style={{ 
-                border: '1px solid #ef4444', 
+                border: '1px solid var(--accent-color)', 
                 padding: '1rem', 
-                borderRadius: '6px', 
-                backgroundColor: 'rgba(239, 68, 68, 0.05)',
+                borderRadius: 0, 
+                backgroundColor: 'rgba(var(--accent-rgb), 0.03)',
                 fontFamily: 'var(--font-mono)',
-                fontSize: '0.8rem',
-                color: '#ef4444',
+                fontSize: '0.75rem',
+                color: 'var(--accent-color)',
                 lineHeight: '1.4'
               }}>
                 [ERROR_LOG] // {error.toUpperCase()}

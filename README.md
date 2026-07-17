@@ -1,36 +1,51 @@
-# Rohan Kohalli / Developer Portfolio
+# Rohan Kohalli — Full Stack Developer Portfolio
 
-A premium, highly interactive web portfolio inspired by **Swiss Typographic Print / Editorial Design** (reminiscent of professional design studio catalogs). 
+Welcome to the source code of my personal portfolio. Built with React + Vite and custom Vanilla CSS, this codebase rejects generic SaaS/AI website templates in favor of a unique **Minimalist Industrial Tech & Hardware Datasheet** aesthetic (inspired by Teenage Engineering's tactile design language).
 
-Built using **React + Vite** and custom **Vanilla CSS** resets, this codebase rejects typical "AI-ish/SaaS clone" aesthetics in favor of a clean, structured print layout with dynamic cursor spotlights, millimeter-paper grids, and blueprint details popovers.
-
----
-
-## 🎨 Core Design Features
-
-- **Warm Alabaster Canvas**: Alabaster light mode (`#fdfbf7`) and obsidian slate dark mode (`#08080a`) with curated bronze-gold accents (`#a16207`).
-- **Interactive Grid Spotlight**: Global mouse listeners feed coordinates into CSS variables to render a moving cursor spotlight glow directly over the millimeter-paper grid lines.
-- **Framed Profile Illustration**: grayscaled profile photo framed inside a double-dashed drafting sheet layout, shifting back to full color on cursor hover.
-- **Popover Details Modal**: Clicking project index rows displays an overlay card styled like a technical README document, containing overview descriptions, key features, and specifications (prepared for HTML5 video loop demos).
-- **Blueprint Capability Cards**: Skill sets organized as technical blueprint cards that set local offsets on mousemove to power card-level hover lights.
+🔗 **[View Live Portfolio](https://rohankohalli.github.io/rohan-portfolio)**
 
 ---
 
-## 🛠️ Technology Stack
+## 🎨 Design & Architecture Highlights
 
-- **Framework**: React (Vite)
-- **Styling**: Vanilla CSS (no CSS-in-JS or Tailwind weight, for maximum paint and layout performance)
-- **Forms**: Serverless form action POST handler via [Formspree](https://formspree.io/)
-- **Typography**:
-  - Headings: *Instrument Serif* (Google Fonts)
-  - Body: *Inter* (Google Fonts)
-  - Details/Code: *JetBrains Mono* (Google Fonts)
+- **Tactile Hardware Grids**: Structured with thin, solid 1px chassis grid lines and panel outlines resembling a physical rack-mount chassis or modular synthesizer.
+- **Standout Cyber-Minimal Palette**: 
+  - **Light Mode**: Cool concrete/light gray background (`#f1f3f5`) with dark charcoal text.
+  - **Dark Mode**: Deep carbon-obsidian slate (`#121318`) with steel-blue dividers.
+  - **Accent**: High-visibility industrial signal orange (`#ff5722`) for pulsing LEDs, bracket highlights, and indicator dots.
+- **Precision Typography**: Features **Space Grotesk** (highly geometric, sharp-angled neo-grotesque) for headings, combined with **JetBrains Mono** for technical parameter listings and labels.
+- **Interactive LCD Control Terminal**: Renders a clean mock command shell dashboard displaying live compile status, port details, and active system logs.
+- **Specimen Portrait Badge**: Frames the developer profile photo inside an asymmetric "Specimen Catalog" badge in the About section.
+- **IDE Code Editor Popovers**: Clicking project rows opens an overlay details panel styled like an IDE editor pane, letting visitors switch files (`README.md`, `SPECS.json`, `FEATURES.txt`) next to a loop video monitor.
+- **Synthesizer Skill Slots**: Tech capabilities styled as modular rack blocks with square LED highlights that glow orange on hover.
+
+---
+
+## 📂 Project Structure
+
+```text
+rohan-portfolio/
+├── src/
+│   ├── assets/              # Profile images, brand logos, and SVGs
+│   ├── components/
+│   │   ├── Header.jsx       # Branding logo cell & bracketed nav items
+│   │   ├── Hero.jsx         # Typography intro & interactive LCD dashboard
+│   │   ├── About.jsx        # Editorial details & Specimen portrait badge
+│   │   ├── Projects.jsx     # Technical projects table & IDE popovers
+│   │   ├── Capabilities.jsx # Hardware synthesizer module capability cards
+│   │   └── Contact.jsx      # Clean form with expanding underlines & square panels
+│   ├── App.jsx              # Global mouse listener & container wrappers
+│   ├── index.css            # Concrete/obsidian variables, grids & typography
+│   └── main.jsx             # React entry point
+├── public/                  # PDF resumes, CVs, and static assets
+├── .env.example             # Template for Formspree endpoint config
+├── index.html               # Main layout frame
+└── package.json             # Workspace dependencies
+```
 
 ---
 
 ## 🚀 Local Development Setup
-
-Follow these commands to configure the workspace on your system:
 
 ### 1. Installation
 Install project dependencies:
@@ -39,7 +54,7 @@ npm install
 ```
 
 ### 2. Environment Configuration
-Form submissions are driven dynamically using Vite environment variables. 
+Form submissions are driven using Vite environment variables. 
 1. Copy the example file to `.env`:
    ```bash
    cp .env.example .env
@@ -54,35 +69,11 @@ Start the local server:
 ```bash
 npm run dev
 ```
-Open [http://localhost:5173/](http://localhost:5173/) in your browser.
+Open [http://localhost:5173/rohan-portfolio/](http://localhost:5173/rohan-portfolio/) in your browser.
 
 ### 4. Build Production Bundle
-Compile the optimized production build:
+Compile the optimized production bundle:
 ```bash
 npm run build
 ```
-Vite will compile the static distribution files into the `dist/` directory (HTML size: ~0.64kB, JS bundle: ~225kB, CSS: ~14.2kB).
-
----
-
-## 📦 Directory Structure
-
-```
-Portfolio/
-├── src/
-│   ├── assets/              # Profile images, logos, and SVGs
-│   ├── components/
-│   │   ├── Header.jsx       # Simplified header with branding and navigation
-│   │   ├── Hero.jsx         # Grayscale profile photo and key metrics
-│   │   ├── About.jsx        # Editorial typography abstract
-│   │   ├── Projects.jsx     # Project index table and popover details modal
-│   │   ├── Capabilities.jsx # Blueprint-style skill cards grid
-│   │   └── Contact.jsx      # Clean print form with focused underlines
-│   ├── App.jsx              # Global mouse listener and state wrappers
-│   ├── index.css            # Gradients, spotlights, offsets, and styles
-│   └── main.jsx
-├── public/                  # PDF resumes and static assets
-├── .env.example             # Template for Formspree ID
-├── index.html
-└── package.json
-```
+The built static files will be output to the `dist/` directory.

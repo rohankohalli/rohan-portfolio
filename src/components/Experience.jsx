@@ -50,13 +50,13 @@ export default function Experience() {
             {/* Timeline info */}
             <div style={{ gridColumn: 'span 4' }}>
               <span className="mono-tag" style={{ display: 'block', color: 'var(--accent-color)' }}>
-                [0{idx + 1} // {exp.duration.toUpperCase()}]
+                [ 0{idx + 1} // {exp.duration.toUpperCase()} ]
               </span>
-              <h3 style={{ fontFamily: 'var(--font-sans)', fontSize: '1.3rem', fontWeight: 700, marginTop: '0.5rem', textTransform: 'uppercase' }}>
+              <h3 style={{ fontFamily: 'var(--font-title)', fontSize: '1.25rem', fontWeight: 600, marginTop: '0.5rem', textTransform: 'uppercase', letterSpacing: '-0.01em' }}>
                 {exp.role}
               </h3>
-              <p style={{ fontStyle: 'italic', fontSize: '1.05rem', color: 'var(--accent-color)' }}>
-                {exp.company}{exp.location ? `, ${exp.location}` : ''}
+              <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.78rem', color: 'var(--accent-color)', marginTop: '0.25rem', textTransform: 'uppercase' }}>
+                {exp.company}{exp.location ? ` // ${exp.location}` : ''}
               </p>
             </div>
             
@@ -68,20 +68,20 @@ export default function Experience() {
                     key={bIdx} 
                     style={{ 
                       position: 'relative', 
-                      paddingLeft: '1.5rem', 
-                      marginBottom: '0.8rem',
-                      fontSize: '1.1rem',
+                      paddingLeft: '1.25rem', 
+                      marginBottom: '0.65rem',
+                      fontSize: '0.98rem',
                       lineHeight: '1.5'
                     }}
                   >
                     <span style={{ 
                       position: 'absolute', 
                       left: 0, 
-                      top: '0.5rem', 
-                      width: '6px', 
-                      height: '6px', 
-                      backgroundColor: 'var(--text-color)',
-                      borderRadius: '50%'
+                      top: '0.45rem', 
+                      width: '4px', 
+                      height: '4px', 
+                      backgroundColor: 'var(--accent-color)',
+                      borderRadius: 0 /* Square status tag */
                     }}></span>
                     {bullet}
                   </li>

@@ -20,9 +20,9 @@ const PROJECTS_DATA = [
       { label: 'Database', value: 'MySQL (Relational)' },
       { label: 'ORM mapping', value: 'Hibernate / Spring Data' }
     ],
-    // videoUrl: '/videos/mystore_demo.mp4', // Uncomment and add your video clip later
+    // videoUrl: '/videos/mystore_demo.mp4',
     wireframe: (
-      <svg className="project-svg" viewBox="0 0 300 200" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ stroke: 'var(--text-color)', strokeWidth: 1.5 }}>
+      <svg className="project-svg" viewBox="0 0 300 200" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ stroke: 'var(--text-color)', strokeWidth: 1.2, opacity: 0.75 }}>
         {/* Shopping cart grid */}
         <rect x="20" y="30" width="160" height="140" />
         <line x1="20" y1="70" x2="180" y2="70" />
@@ -61,7 +61,7 @@ const PROJECTS_DATA = [
     ],
     // videoUrl: '/videos/eventon_demo.mp4',
     wireframe: (
-      <svg className="project-svg" viewBox="0 0 300 200" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ stroke: 'var(--text-color)', strokeWidth: 1.5 }}>
+      <svg className="project-svg" viewBox="0 0 300 200" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ stroke: 'var(--text-color)', strokeWidth: 1.2, opacity: 0.75 }}>
         {/* Calendar Grid */}
         <rect x="20" y="25" width="260" height="150" />
         <line x1="20" y1="62" x2="280" y2="62" />
@@ -98,7 +98,7 @@ const PROJECTS_DATA = [
     ],
     // videoUrl: '/videos/blinkchat_demo.mp4',
     wireframe: (
-      <svg className="project-svg" viewBox="0 0 300 200" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ stroke: 'var(--text-color)', strokeWidth: 1.5 }}>
+      <svg className="project-svg" viewBox="0 0 300 200" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ stroke: 'var(--text-color)', strokeWidth: 1.2, opacity: 0.75 }}>
         {/* Chat frame */}
         <rect x="15" y="20" width="270" height="160" />
         <line x1="80" y1="20" x2="80" y2="180" />
@@ -121,7 +121,7 @@ const PROJECTS_DATA = [
     tags: ['JavaScript', 'Chrome APIs', 'HTML5'],
     githubUrl: 'https://github.com/rohankohalli/AgreeSmarter_Extension',
     wireframe: (
-      <svg className="project-svg" viewBox="0 0 300 200" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ stroke: 'var(--text-color)', strokeWidth: 1.5 }}>
+      <svg className="project-svg" viewBox="0 0 300 200" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ stroke: 'var(--text-color)', strokeWidth: 1.2, opacity: 0.75 }}>
         {/* Browser window */}
         <rect x="10" y="20" width="280" height="160" />
         <line x1="10" y1="45" x2="290" y2="45" />
@@ -144,7 +144,7 @@ const PROJECTS_DATA = [
     tags: ['Node.js', 'Express', 'React', 'MongoDB'],
     githubUrl: 'https://github.com/rohankohalli/Job-Tracker',
     wireframe: (
-      <svg className="project-svg" viewBox="0 0 300 200" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ stroke: 'var(--text-color)', strokeWidth: 1.5 }}>
+      <svg className="project-svg" viewBox="0 0 300 200" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ stroke: 'var(--text-color)', strokeWidth: 1.2, opacity: 0.75 }}>
         {/* Kanban Board columns */}
         <rect x="15" y="20" width="270" height="160" />
         <line x1="105" y1="20" x2="105" y2="180" />
@@ -168,7 +168,7 @@ const PROJECTS_DATA = [
     tags: ['JavaScript', 'HTML5', 'CSS3', 'UI-Shell'],
     githubUrl: 'https://github.com/rohankohalli/ForwardOS',
     wireframe: (
-      <svg className="project-svg" viewBox="0 0 300 200" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ stroke: 'var(--text-color)', strokeWidth: 1.5 }}>
+      <svg className="project-svg" viewBox="0 0 300 200" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ stroke: 'var(--text-color)', strokeWidth: 1.2, opacity: 0.75 }}>
         {/* Overlapping window frames */}
         <rect x="20" y="40" width="180" height="110" />
         <line x1="20" y1="55" x2="200" y2="55" />
@@ -190,7 +190,7 @@ const PROJECTS_DATA = [
     tags: ['Python', 'OpenCV', 'NumPy'],
     githubUrl: 'https://github.com/rohankohalli/Face_detection',
     wireframe: (
-      <svg className="project-svg" viewBox="0 0 300 200" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ stroke: 'var(--text-color)', strokeWidth: 1.5 }}>
+      <svg className="project-svg" viewBox="0 0 300 200" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ stroke: 'var(--text-color)', strokeWidth: 1.2, opacity: 0.75 }}>
         {/* Camera viewport */}
         <rect x="15" y="20" width="270" height="160" />
         {/* Viewfinder crosshairs */}
@@ -215,7 +215,7 @@ const PROJECTS_DATA = [
     tags: ['Python', 'Speech APIs', 'OS Auto'],
     githubUrl: 'https://github.com/rohankohalli/Virtual-assistant',
     wireframe: (
-      <svg className="project-svg" viewBox="0 0 300 200" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ stroke: 'var(--text-color)', strokeWidth: 1.5 }}>
+      <svg className="project-svg" viewBox="0 0 300 200" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ stroke: 'var(--text-color)', strokeWidth: 1.2, opacity: 0.75 }}>
         {/* Waveform graphic */}
         <path d="M 20 100 Q 50 20 80 100 T 140 100 T 200 100 T 260 100 T 280 100" fill="none" />
         <path d="M 20 100 Q 50 140 80 100 T 140 100 T 200 100 T 260 100 T 280 100" fill="none" opacity="0.4" />
@@ -246,6 +246,12 @@ PROJECTS_DATA.slice(3).forEach((proj) => {
 
 export default function Projects() {
   const [selectedProject, setSelectedProject] = useState(null);
+  const [activeTab, setActiveTab] = useState('readme'); // 'readme', 'specs', 'features'
+
+  // Reset tab to README when project changes
+  useEffect(() => {
+    setActiveTab('readme');
+  }, [selectedProject]);
 
   // Esc key listener to close active popover
   useEffect(() => {
@@ -266,7 +272,7 @@ export default function Projects() {
         <span className="mono-tag">INDEXED // 08_ITEMS</span>
       </div>
 
-      <div className="projects-list">
+      <div className="projects-table">
         {PROJECTS_DATA.map((project, idx) => (
           <div
             key={project.id}
@@ -289,72 +295,100 @@ export default function Projects() {
       {selectedProject && (
         <div className="popover-overlay" onClick={() => setSelectedProject(null)}>
           <div className="popover-card reveal-on-load" onClick={(e) => e.stopPropagation()}>
-            {/* popover Header */}
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', borderBottom: '1px solid var(--border-color)', paddingBottom: '1.25rem', marginBottom: '1.75rem' }}>
+            
+            {/* Modal Header */}
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', borderBottom: '1px solid var(--border-color)', paddingBottom: '1rem', marginBottom: '1.5rem' }}>
               <div>
-                <span className="mono-tag" style={{ display: 'block', marginBottom: '0.25rem' }}>
-                  PROJECT SPECIFICATION // YEAR_{selectedProject.year}
+                <span className="mono-tag" style={{ display: 'block', marginBottom: '0.2rem' }}>
+                  FILE_REF // YEAR_{selectedProject.year}
                 </span>
-                <h3 style={{ fontSize: '2rem', fontFamily: 'var(--font-serif)', lineHeight: '1.1' }}>
+                <h3 style={{ fontSize: '1.75rem', fontWeight: 700, lineHeight: '1.15' }}>
                   {selectedProject.title}
                 </h3>
-                <span style={{ fontSize: '0.95rem', color: 'var(--accent-color)', fontStyle: 'italic', display: 'block', marginTop: '0.25rem' }}>
-                  {selectedProject.type}
-                </span>
               </div>
               <button 
                 className="theme-btn" 
                 onClick={() => setSelectedProject(null)}
-                style={{ padding: '0.35rem 0.75rem' }}
+                style={{ padding: '0.3rem 0.6rem' }}
               >
                 CLOSE [ESC]
               </button>
             </div>
 
-            {/* popover Two-Column Body */}
-            <div className="popover-columns" style={{ display: 'grid', gridTemplateColumns: '1.2fr 1fr', gap: '2.5rem' }}>
-              {/* Left Column: Markdown Content */}
-              <div>
-                <h4 className="mono-tag" style={{ borderBottom: '1px solid var(--border-color)', paddingBottom: '0.4rem', marginBottom: '0.8rem' }}>
-                  01 / SYSTEM OVERVIEW
-                </h4>
-                <p style={{ fontSize: '0.98rem', lineHeight: '1.55', marginBottom: '1.75rem' }}>
-                  {selectedProject.overview}
-                </p>
+            {/* Modal Two-Column Content (IDE Style) */}
+            <div className="popover-columns">
+              
+              {/* Left Column: IDE Code Editor Window */}
+              <div style={{ border: '1px solid var(--border-color)', display: 'flex', flexDirection: 'column', backgroundColor: 'rgba(var(--text-color), 0.005)' }}>
+                {/* IDE Tab Bar */}
+                <div className="ide-tab-bar">
+                  <button className={`ide-tab ${activeTab === 'readme' ? 'active' : ''}`} onClick={() => setActiveTab('readme')}>
+                    README.md
+                  </button>
+                  <button className={`ide-tab ${activeTab === 'specs' ? 'active' : ''}`} onClick={() => setActiveTab('specs')}>
+                    SPECS.json
+                  </button>
+                  <button className={`ide-tab ${activeTab === 'features' ? 'active' : ''}`} onClick={() => setActiveTab('features')}>
+                    FEATURES.txt
+                  </button>
+                </div>
 
-                <h4 className="mono-tag" style={{ borderBottom: '1px solid var(--border-color)', paddingBottom: '0.4rem', marginBottom: '0.8rem' }}>
-                  02 / SYSTEM SPECIFICATIONS
-                </h4>
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '1rem', marginBottom: '1rem' }}>
-                  {selectedProject.specs.map((spec, sIdx) => (
-                    <div key={sIdx} style={{ display: 'flex', flexDirection: 'column' }}>
-                      <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.68rem', opacity: 0.55 }}>
-                        {spec.label.toUpperCase()}
-                      </span>
-                      <span style={{ fontSize: '0.88rem', fontWeight: 600 }}>
-                        {spec.value}
-                      </span>
-                    </div>
-                  ))}
+                {/* Editor Content Area */}
+                <div style={{ display: 'flex', padding: '1.25rem 0.75rem', minHeight: '200px' }}>
+                  {/* Left Column: Simulated Line Numbers */}
+                  <div style={{ display: 'flex', flexDirection: 'column', paddingRight: '0.8rem', borderRight: '1px solid var(--border-color)', color: 'var(--text-color)', opacity: 0.25, fontFamily: 'var(--font-mono)', fontSize: '0.72rem', textAlign: 'right', userSelect: 'none', lineHeight: '1.5', minWidth: '22px' }}>
+                    {Array.from({ length: 8 }).map((_, i) => <div key={i}>{i + 1}</div>)}
+                  </div>
+
+                  {/* Tab Contents */}
+                  <div style={{ flex: 1, paddingLeft: '1.25rem', overflowY: 'auto' }}>
+                    {activeTab === 'readme' && (
+                      <div>
+                        <h4 className="mono-tag" style={{ marginBottom: '0.6rem', fontSize: '0.65rem' }}># SYSTEM OVERVIEW</h4>
+                        <p style={{ fontSize: '0.9rem', lineHeight: '1.5', opacity: 0.8 }}>
+                          {selectedProject.overview}
+                        </p>
+                      </div>
+                    )}
+
+                    {activeTab === 'specs' && (
+                      <div>
+                        <h4 className="mono-tag" style={{ marginBottom: '0.6rem', fontSize: '0.65rem' }}># SPECS DEFINITIONS</h4>
+                        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                          {selectedProject.specs.map((spec, sIdx) => (
+                            <div key={sIdx} style={{ display: 'grid', gridTemplateColumns: '110px 1fr', fontSize: '0.82rem', fontFamily: 'var(--font-mono)' }}>
+                              <span style={{ opacity: 0.45 }}>"{spec.label.toLowerCase()}":</span>
+                              <span>"{spec.value}"</span>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+
+                    {activeTab === 'features' && (
+                      <div>
+                        <h4 className="mono-tag" style={{ marginBottom: '0.6rem', fontSize: '0.65rem' }}># KEY ARCHITECTURAL FEATURES</h4>
+                        <ul style={{ listStyle: 'none', paddingLeft: 0 }}>
+                          {selectedProject.features.map((feat, fIdx) => (
+                            <li key={fIdx} style={{ position: 'relative', paddingLeft: '1rem', marginBottom: '0.45rem', fontSize: '0.85rem', lineHeight: '1.4' }}>
+                              <span style={{ position: 'absolute', left: 0, top: '0.42rem', width: '4px', height: '4px', backgroundColor: 'var(--accent-color)' }}></span>
+                              {feat}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+                  </div>
                 </div>
               </div>
 
-              {/* Right Column: Video Demo & Core Capabilities */}
+              {/* Right Column: Diagnostic Video / Wireframe Demo */}
               <div>
-                <h4 className="mono-tag" style={{ borderBottom: '1px solid var(--border-color)', paddingBottom: '0.4rem', marginBottom: '0.8rem' }}>
-                  03 / DEMONSTRATION WIREFRAME
+                <h4 className="mono-tag" style={{ borderBottom: '1px solid var(--border-color)', paddingBottom: '0.3rem', marginBottom: '0.75rem', fontSize: '0.65rem' }}>
+                  [ MONITOR // VIDEO_OUT ]
                 </h4>
-                <div className="popover-media-container" style={{ 
-                  border: '1px dashed var(--border-color)', 
-                  borderRadius: '6px', 
-                  padding: '0.75rem', 
-                  display: 'flex', 
-                  alignItems: 'center', 
-                  justifyContent: 'center', 
-                  backgroundColor: 'rgba(var(--text-color), 0.005)',
-                  height: '190px',
-                  overflow: 'hidden'
-                }}>
+                
+                <div className="popover-media-container">
                   {selectedProject.videoUrl ? (
                     <video 
                       src={selectedProject.videoUrl} 
@@ -362,46 +396,41 @@ export default function Projects() {
                       loop 
                       muted 
                       playsInline 
-                      style={{ width: '100%', height: '100%', objectFit: 'contain', borderRadius: '4px' }} 
+                      style={{ width: '100%', height: '100%', objectFit: 'contain' }} 
                     />
                   ) : (
                     selectedProject.wireframe
                   )}
                 </div>
 
-                <h4 className="mono-tag" style={{ borderBottom: '1px solid var(--border-color)', paddingBottom: '0.4rem', marginBottom: '0.8rem', marginTop: '1.5rem' }}>
-                  04 / KEY FEATURES
-                </h4>
-                <ul style={{ listStyle: 'none', paddingLeft: 0 }}>
-                  {selectedProject.features.map((feat, fIdx) => (
-                    <li key={fIdx} style={{ position: 'relative', paddingLeft: '1.25rem', marginBottom: '0.5rem', fontSize: '0.88rem', lineHeight: '1.45' }}>
-                      <span style={{ position: 'absolute', left: 0, top: '0.45rem', width: '5px', height: '5px', backgroundColor: 'var(--accent-color)', borderRadius: '50%' }}></span>
-                      {feat}
-                    </li>
-                  ))}
-                </ul>
+                <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.7rem', fontFamily: 'var(--font-mono)', opacity: 0.4, marginTop: '0.5rem' }}>
+                  <span>REF: DIAGNOSTIC // ACTIVE</span>
+                  <span>SYS: TE_V2</span>
+                </div>
               </div>
+
             </div>
 
-            {/* popover Footer Action Bar */}
-            <div style={{ borderTop: '1px solid var(--border-color)', paddingTop: '1.5rem', marginTop: '1.5rem', display: 'flex', gap: '1rem', justifyContent: 'flex-end' }}>
+            {/* Modal Footer Actions */}
+            <div style={{ borderTop: '1px solid var(--border-color)', paddingTop: '1.25rem', marginTop: '1.75rem', display: 'flex', gap: '0.8rem', justifyContent: 'flex-end' }}>
               <a 
                 href={selectedProject.githubUrl} 
                 target="_blank" 
                 rel="noreferrer" 
                 className="theme-btn" 
-                style={{ padding: '0.5rem 1.25rem', textDecoration: 'none', display: 'inline-flex', alignItems: 'center' }}
+                style={{ padding: '0.45rem 1rem', textDecoration: 'none' }}
               >
-                VIEW REPOSITORY ON GITHUB ↗
+                VIEW ON GITHUB ↗
               </a>
               <button 
                 className="theme-btn" 
                 onClick={() => setSelectedProject(null)} 
-                style={{ padding: '0.5rem 1.25rem' }}
+                style={{ padding: '0.45rem 1rem' }}
               >
-                CLOSE WINDOW
+                CLOSE PREVIEW
               </button>
             </div>
+
           </div>
         </div>
       )}
