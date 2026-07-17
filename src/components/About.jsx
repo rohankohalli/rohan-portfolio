@@ -21,14 +21,23 @@ export default function About() {
         </p>
       </div>
 
-      <div style={{ gridColumn: 'span 3', display: 'flex', justifyContent: 'flex-end' }}>
+      <div style={{ gridColumn: 'span 3', display: 'flex', justifyContent: 'flex-end', position: 'relative' }}>
         <div className="photo-specimen-card">
+          {/* Ink Validation Stamp */}
+          <div className="specimen-stamp">
+            APPROVED<br />RHK_SYS
+          </div>
+
           <span className="mono-tag" style={{ fontSize: '0.6rem', borderBottom: '1px solid var(--border-color)', paddingBottom: '0.3rem', display: 'block', opacity: 0.5 }}>
             [ FIG_01 // PHOTO_REG ]
           </span>
+          
           <div className="specimen-wrapper">
+            {/* Translucent matte tape holding the photo */}
+            <div className="tape-strip"></div>
             <img src={profilePhoto} alt="Rohan Kohalli" className="specimen-photo" />
           </div>
+          
           <span className="mono-tag" style={{ fontSize: '0.62rem', display: 'block', textAlign: 'center', opacity: 0.5 }}>
             SPECIMEN // ENG_RHK.JPG
           </span>
