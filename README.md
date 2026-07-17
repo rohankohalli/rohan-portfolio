@@ -56,7 +56,3 @@ npm run build
 The compiled production assets will be output to the `dist/` directory.
 
 ---
-
-## 📄 License
-
-This project is open-source and available under the [MIT License](LICENSE).
