@@ -1,41 +1,62 @@
-# Rohan Kohalli — Full Stack Developer Portfolio
+# Personal Portfolio Website
 
-Source code for my personal portfolio website.
+My personal developer portfolio website built with React, Vite, and custom CSS.
 
-🔗 **[View Live Portfolio](https://rohankohalli.github.io/rohan-portfolio)**
+🔗 **[Live Demo](https://rohankohalli.github.io/rohan-portfolio)**
 
 ---
 
-## 🚀 Setup & Local Development
+## 🛠️ Tech Stack
 
-Follow these steps to configure and run the portfolio on your local system:
+* **Frontend:** React, Vanilla CSS
+* **Build Tool:** Vite
+* **Forms:** Formspree
+* **Deployment:** GitHub Pages / GitHub Actions
 
-### 1. Installation
-Install the project dependencies:
+---
+
+## 🚀 Run Locally
+
+Follow these steps to run the project on your local machine:
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/rohankohalli/rohan-portfolio.git
+```
+
+### 2. Navigate to the project directory
+```bash
+cd rohan-portfolio
+```
+
+### 3. Install dependencies
 ```bash
 npm install
 ```
 
-### 2. Environment Configuration
-Form submissions are handled dynamically using Vite environment variables:
-1. Copy the template environment file to `.env`:
-   ```bash
-   cp .env.example .env
-   ```
-2. Open `.env` and replace the value with your Formspree ID:
-   ```env
-   VITE_FORMSPREE_ID=mnjygkzn
-   ```
+### 4. Set up environment variables
+Create a `.env` file in the root directory and add your Formspree ID (register at [Formspree](https://formspree.io/) to get one):
+```env
+VITE_FORMSPREE_ID=your_formspree_id_here
+```
 
-### 3. Run Development Server
-Start the local development server:
+### 5. Start the development server
 ```bash
 npm run dev
 ```
 
-### 4. Build for Production
-Compile the optimized static distribution bundle:
+---
+
+## 📦 Build for Production
+
+To build the static distribution bundle:
 ```bash
 npm run build
 ```
 The compiled production assets will be output to the `dist/` directory.
+
+---
+
+## 📄 License
+
+This project is open-source and available under the [MIT License](LICENSE).
