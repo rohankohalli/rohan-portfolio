@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where([class~="dark"], [class~="dark"] *));
+
+@layer base {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+}
