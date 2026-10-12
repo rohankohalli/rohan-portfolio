@@ -3,15 +3,17 @@ import ArchitectureVisual from './ArchitectureVisual'
 
 export default function Hero() {
     return (
-        <section id="hero" className="py-12 sm:py-16 lg:py-20">
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        <section id="hero" className="py-10 sm:py-16 lg:py-20">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
 
                 {/* Left Column: Intro & Details */}
                 <div className="lg:col-span-7 flex flex-col items-start">
                     {/* Status Badge */}
-                    <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 dark:bg-blue-950/60 border border-blue-200/80 dark:border-blue-900/80 text-blue-700 dark:text-blue-300 font-mono text-[11px] uppercase tracking-wider mb-5">
-                        <span className="w-1.5 h-1.5 rounded-full bg-blue-600 dark:bg-blue-400"></span>
-                        <span>BUILD &bull LEARN &bull GROW &bull NEW OPPORTUNITIES</span>
+                    <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 dark:bg-blue-950/60 border border-blue-200/80 dark:border-blue-900/80 text-blue-700 dark:text-blue-300 font-mono text-[11px] uppercase tracking-wider mb-5 max-w-full">
+                        <span className="w-1.5 h-1.5 rounded-full bg-blue-600 dark:bg-blue-400 shrink-0"></span>
+                        <span className="truncate">
+                            <span className="hidden sm:inline">BUILD &bull; LEARN &bull; GROW &bull; </span>NEW OPPORTUNITIES
+                        </span>
                     </div>
 
                     {/* Role Header */}
@@ -20,7 +22,7 @@ export default function Hero() {
                     </div>
 
                     {/* Main Name Heading */}
-                    <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 dark:text-white tracking-tight leading-none mb-4">
+                    <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 dark:text-white tracking-tight leading-none mb-4">
                         Rohan Kohalli<span className="text-blue-600 dark:text-blue-500">.</span>
                     </h1>
 
@@ -30,26 +32,26 @@ export default function Hero() {
                     </p>
 
                     {/* Status / Location Meta Pills */}
-                    <div className="flex flex-wrap items-center gap-2.5 sm:gap-3 text-xs text-slate-600 dark:text-slate-400 mb-8">
-                        <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-800 bg-white/70 dark:bg-slate-900/70">
-                            <MapPin className="w-3.5 h-3.5 text-blue-600 dark:text-blue-400" />
+                    <div className="flex flex-wrap items-center gap-2 sm:gap-3 text-xs text-slate-600 dark:text-slate-400 mb-8">
+                        <span className="inline-flex items-center gap-1.5 px-2.5 sm:px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-800 bg-white/70 dark:bg-slate-900/70">
+                            <MapPin className="w-3.5 h-3.5 text-blue-600 dark:text-blue-400 shrink-0" />
                             <span>Pune, India</span>
                         </span>
-                        <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-800 bg-white/70 dark:bg-slate-900/70">
-                            <Globe className="w-3.5 h-3.5 text-blue-600 dark:text-blue-400" />
+                        <span className="inline-flex items-center gap-1.5 px-2.5 sm:px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-800 bg-white/70 dark:bg-slate-900/70">
+                            <Globe className="w-3.5 h-3.5 text-blue-600 dark:text-blue-400 shrink-0" />
                             <span>Open to Relocate</span>
                         </span>
-                        <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-800 bg-white/70 dark:bg-slate-900/70">
-                            <Briefcase className="w-3.5 h-3.5 text-blue-600 dark:text-blue-400" />
+                        <span className="inline-flex items-center gap-1.5 px-2.5 sm:px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-800 bg-white/70 dark:bg-slate-900/70">
+                            <Briefcase className="w-3.5 h-3.5 text-blue-600 dark:text-blue-400 shrink-0" />
                             <span>Looking for Full-Time Roles</span>
                         </span>
                     </div>
 
                     {/* Call to Actions */}
-                    <div className="flex flex-wrap items-center gap-3.5 sm:gap-4">
+                    <div className="flex flex-wrap items-center gap-3 sm:gap-4 w-full sm:w-auto">
                         <a
                             href="#projects"
-                            className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-medium text-sm shadow-md hover:shadow-lg transition-all duration-200 active:scale-95 group"
+                            className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-medium text-sm shadow-md hover:shadow-lg transition-all duration-200 active:scale-95 group w-full sm:w-auto"
                         >
                             <span>View Projects</span>
                             <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
@@ -59,7 +61,7 @@ export default function Hero() {
                             href="/resume.pdf"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-flex items-center gap-2 px-5 py-3 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 hover:bg-slate-50 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-200 font-medium text-sm shadow-2xs hover:border-slate-400 dark:hover:border-slate-600 transition-all duration-200 active:scale-95"
+                            className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 hover:bg-slate-50 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-200 font-medium text-sm shadow-2xs hover:border-slate-400 dark:hover:border-slate-600 transition-all duration-200 active:scale-95 w-full sm:w-auto"
                         >
                             <FileDown className="w-4 h-4 text-slate-500 dark:text-slate-400" />
                             <span>Download Resume</span>
@@ -71,7 +73,7 @@ export default function Hero() {
                 </div>
 
                 {/* Right Column: Interactive System Architecture Card */}
-                <div className="lg:col-span-5 flex justify-center lg:justify-end">
+                <div className="lg:col-span-5 flex justify-center lg:justify-end w-full">
                     <ArchitectureVisual />
                 </div>
 

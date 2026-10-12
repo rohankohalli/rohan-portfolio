@@ -86,7 +86,6 @@ const secondaryTools = [
 export default function About() {
     return (
         <section id="about" className="py-16 sm:py-20 border-t border-slate-200/80 dark:border-slate-800/80">
-            {/* Section Header */}
             <div className="mb-8">
                 <div className="font-mono text-xs sm:text-sm font-semibold text-blue-600 dark:text-blue-400 uppercase tracking-wider mb-2">
                     01 / ABOUT
@@ -96,7 +95,6 @@ export default function About() {
                 </h2>
             </div>
 
-            {/* Intro Description */}
             <div className="max-w-3xl space-y-4 text-slate-600 dark:text-slate-300 leading-relaxed text-base sm:text-lg mb-12">
                 <p>
                     I'm a full-stack developer focused on building practical, real-world applications with clean architecture and maintainable code. I enjoy working across the stack — from designing responsive UIs to building robust backend APIs and managing data.
@@ -106,7 +104,6 @@ export default function About() {
                 </p>
             </div>
 
-            {/* 4 Core Architectural Pillar Cards */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 mb-8">
                 {corePillars.map((pillar) => {
                     const Icon = pillar.icon
