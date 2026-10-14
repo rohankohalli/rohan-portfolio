@@ -1,4 +1,5 @@
-import { Sparkles } from 'lucide-react'
+import { useState } from 'react';
+import { Sparkles, User } from 'lucide-react';
 
 function ReactIcon({ className = "w-5 h-5" }) {
     return (
@@ -8,7 +9,7 @@ function ReactIcon({ className = "w-5 h-5" }) {
             <ellipse cx="12" cy="12" rx="10" ry="4.5" transform="rotate(120 12 12)" />
             <circle cx="12" cy="12" r="2" fill="currentColor" />
         </svg>
-    )
+    );
 }
 
 function NodeIcon({ className = "w-5 h-5" }) {
@@ -19,7 +20,7 @@ function NodeIcon({ className = "w-5 h-5" }) {
             <path d="M20.5 7L12 12L3.5 7" />
             <circle cx="12" cy="12" r="1.5" fill="currentColor" />
         </svg>
-    )
+    );
 }
 
 function MySQLIcon({ className = "w-5 h-5" }) {
@@ -30,7 +31,7 @@ function MySQLIcon({ className = "w-5 h-5" }) {
             <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
             <line x1="12" y1="8" x2="12" y2="15" strokeDasharray="2 2" />
         </svg>
-    )
+    );
 }
 
 const corePillars = [
@@ -70,7 +71,7 @@ const corePillars = [
         iconColor: 'text-purple-600 dark:text-purple-400 bg-purple-50 dark:bg-purple-950/60 border-purple-200 dark:border-purple-800',
         capabilities: ['Prompt Engineering', 'Structured JSON', 'REST Integration']
     }
-]
+];
 
 const secondaryTools = [
     'JavaScript (ES6+)',
@@ -81,12 +82,71 @@ const secondaryTools = [
     'GitHub',
     'Postman',
     'Linux (Ubuntu)'
-]
+];
+
+function ProfileSpecimenCard() {
+    const [imgError, setImgError] = useState(false);
+
+    return (
+        <div className="w-full max-w-xs mx-auto lg:ml-auto rounded-2xl border border-slate-200 dark:border-slate-800 bg-white/90 dark:bg-slate-900/90 shadow-2xs hover:shadow-md transition-all p-4 sm:p-5 flex flex-col justify-between relative group">
+            {/* Top Specimen Header */}
+            <div className="flex items-center justify-between pb-3 border-b border-slate-100 dark:border-slate-800 font-mono text-[10px] uppercase">
+                <span className="text-slate-400 dark:text-slate-500 font-semibold tracking-wider">
+                    [ FIG_01 // PHOTO_REG ]
+                </span>
+                <span className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-blue-50 dark:bg-blue-950/60 text-blue-700 dark:text-blue-300 font-bold border border-blue-200/60 dark:border-blue-800/60">
+                    <span className="w-1.5 h-1.5 rounded-full bg-blue-500 animate-pulse"></span>
+                    VERIFIED
+                </span>
+            </div>
+
+            {/* Photo / Avatar Placeholder Frame */}
+            <div className="my-4 aspect-4/5 rounded-xl border border-dashed border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-950/80 overflow-hidden relative flex items-center justify-center">
+                {!imgError ? (
+                    <img
+                        src="/profile.jpg"
+                        alt="Rohan Kohalli"
+                        onError={() => setImgError(true)}
+                        className="w-full h-full object-cover object-center"
+                    />
+                ) : (
+                    <div className="flex flex-col items-center justify-center text-center p-4 space-y-2.5">
+                        <div className="w-16 h-16 rounded-2xl bg-blue-50 dark:bg-blue-950/60 border border-blue-200/80 dark:border-blue-800 flex items-center justify-center text-blue-600 dark:text-blue-400 shadow-2xs">
+                            <User className="w-8 h-8" />
+                        </div>
+                        <div>
+                            <span className="font-mono text-xs font-bold text-slate-800 dark:text-slate-200 block">
+                                Rohan Kohalli
+                            </span>
+                            <span className="font-mono text-[10px] text-slate-500 dark:text-slate-400 uppercase tracking-wider block mt-0.5">
+                                Full-Stack Developer
+                            </span>
+                        </div>
+                        <span className="font-mono text-[9px] px-2 py-0.5 rounded bg-slate-200/70 dark:bg-slate-800 text-slate-500 dark:text-slate-400 uppercase">
+                            SPECIMEN // ENG_RHK
+                        </span>
+                    </div>
+                )}
+            </div>
+
+            {/* Bottom Specimen Details */}
+            <div className="pt-3 border-t border-slate-100 dark:border-slate-800 flex items-center justify-between text-[11px] font-mono">
+                <span className="text-slate-500 dark:text-slate-400">
+                    PUNE // INDIA
+                </span>
+                <span className="text-blue-600 dark:text-blue-400 font-semibold">
+                    SYS_ACTIVE
+                </span>
+            </div>
+        </div>
+    );
+}
 
 export default function About() {
     return (
         <section id="about" className="py-16 sm:py-20 border-t border-slate-200/80 dark:border-slate-800/80">
-            <div className="mb-8">
+            {/* Header */}
+            <div className="mb-8 sm:mb-10">
                 <div className="font-mono text-xs sm:text-sm font-semibold text-blue-600 dark:text-blue-400 uppercase tracking-wider mb-2">
                     01 / ABOUT
                 </div>
@@ -95,18 +155,44 @@ export default function About() {
                 </h2>
             </div>
 
-            <div className="max-w-3xl space-y-4 text-slate-600 dark:text-slate-300 leading-relaxed text-base sm:text-lg mb-12">
-                <p>
-                    I'm a full-stack developer focused on building practical, real-world applications with clean architecture and maintainable code. I enjoy working across the stack — from designing responsive UIs to building robust backend APIs and managing data.
-                </p>
-                <p>
-                    My core foundation centers around modern JavaScript/TypeScript, React, Node.js, and MySQL. I believe in writing code that is clean to read, easy to reason about, and solves concrete user problems.
-                </p>
+            {/* Top Row: Bio & Photo Specimen Card */}
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-start mb-12">
+                {/* Left: Bio & Highlights */}
+                <div className="lg:col-span-8 space-y-4 text-slate-600 dark:text-slate-300 leading-relaxed text-base sm:text-lg">
+                    <p>
+                        I'm a full-stack developer focused on building practical, real-world applications with clean architecture and maintainable code. I enjoy working across the stack — from designing responsive UIs to building robust backend APIs and managing data.
+                    </p>
+                    <p>
+                        My core foundation centers around modern JavaScript/TypeScript, React, Node.js, and MySQL. I believe in writing code that is clean to read, easy to reason about, and solves concrete user problems.
+                    </p>
+
+                    {/* Quick Principles Bar */}
+                    <div className="pt-3 flex flex-wrap gap-2 text-xs font-mono text-slate-600 dark:text-slate-400">
+                        <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-slate-200/80 dark:border-slate-800 bg-white/60 dark:bg-slate-900/40">
+                            <span className="w-1.5 h-1.5 rounded-full bg-blue-500"></span>
+                            Clean & Maintainable Code
+                        </span>
+                        <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-slate-200/80 dark:border-slate-800 bg-white/60 dark:bg-slate-900/40">
+                            <span className="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                            Scalable Backend Design
+                        </span>
+                        <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-slate-200/80 dark:border-slate-800 bg-white/60 dark:bg-slate-900/40">
+                            <span className="w-1.5 h-1.5 rounded-full bg-purple-500"></span>
+                            User-Centric Architecture
+                        </span>
+                    </div>
+                </div>
+
+                {/* Right: Photo Specimen Card */}
+                <div className="lg:col-span-4 flex justify-center lg:justify-end w-full">
+                    <ProfileSpecimenCard />
+                </div>
             </div>
 
+            {/* Core Pillars 4-Column Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 mb-8">
                 {corePillars.map((pillar) => {
-                    const Icon = pillar.icon
+                    const Icon = pillar.icon;
                     return (
                         <div
                             key={pillar.name}
@@ -144,7 +230,7 @@ export default function About() {
                                 ))}
                             </div>
                         </div>
-                    )
+                    );
                 })}
             </div>
 
@@ -165,5 +251,5 @@ export default function About() {
                 </div>
             </div>
         </section>
-    )
+    );
 }

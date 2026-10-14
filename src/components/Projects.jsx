@@ -78,7 +78,6 @@ export default function Projects() {
                             </div>
                         </div>
 
-                        {/* Action Links Footer */}
                         <div className="px-5 sm:px-6 py-3.5 border-t border-slate-100 dark:border-slate-800/80 bg-slate-50/40 dark:bg-slate-950/30 flex items-center justify-between text-xs font-semibold">
                             {project.githubUrl ? (
                                 <a
@@ -87,7 +86,7 @@ export default function Projects() {
                                     rel="noopener noreferrer"
                                     className="inline-flex items-center gap-1.5 text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
                                 >
-                                    <img src="/assets/icons/github.png"
+                                    <img src="./assets/icons/github.png"
                                         alt="GitHub"
                                         className="w-5.5 h-5.5 object-contain dark:invert"
                                     />
