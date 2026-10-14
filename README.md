@@ -1,58 +1,29 @@
-# Personal Portfolio Website
+# Rohan Kohalli — Developer Portfolio
 
-My personal developer portfolio website built with React, Vite, and custom CSS.
+Personal portfolio and systems showcase built with modern React 19, Tailwind CSS v4, and Vite. Designed with an industrial, technical aesthetic featuring interactive system architecture, engineering milestones, and full-stack project deployments.
 
 🔗 **[Live Demo](https://rohankohalli.github.io/rohan-portfolio)**
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠️ Stack & Technologies
 
-* **Frontend:** React, Vanilla CSS
-* **Build Tool:** Vite
-* **Forms:** Formspree
-* **Deployment:** GitHub Pages / GitHub Actions
-
----
-
-## 🚀 Run Locally
-
-Follow these steps to run the project on your local machine:
-
-### 1. Clone the repository
-```bash
-git clone https://github.com/rohankohalli/rohan-portfolio.git
-```
-
-### 2. Navigate to the project directory
-```bash
-cd rohan-portfolio
-```
-
-### 3. Install dependencies
-```bash
-npm install
-```
-
-### 4. Set up environment variables
-Create a `.env` file in the root directory and add your Formspree ID (register at [Formspree](https://formspree.io/) to get one):
-```env
-VITE_FORMSPREE_ID=your_formspree_id_here
-```
-
-### 5. Start the development server
-```bash
-npm run dev
-```
+* **Frontend:** React 19, Tailwind CSS v4, Lucide Icons
+* **Build Tooling:** Vite 8
+* **Theme System:** Persistent Dark & Light mode with system theme detection
+* **Form Handling:** Formspree API with client-side validation and simulated fallback
+* **Architecture:** Modular component architecture, responsive layouts, animated timelines
 
 ---
 
-## 📦 Build for Production
+## ⚡ Core Sections
 
-To build the static distribution bundle:
-```bash
-npm run build
-```
-The compiled production assets will be output to the `dist/` directory.
+* **00 / Hero:** Core developer positioning, status tags, and interactive system architecture pipeline visualizer.
+* **01 / About:** Core engineering pillars (React, Node.js, Express, MySQL, Gemini AI API) and workflow tools.
+* **02 / Projects:** Full-stack deployments with live status beacons, tags, and source links (*Career Compass AI*, *E-commerce Platform*, *EventOn*).
+* **03 / Experience:** Animated chronological milestone timeline (*B.E. Computer Science* $\rightarrow$ *SETTribe* $\rightarrow$ *SpringUp Labs*).
+* **04 / Contact:** Direct communication channels and interactive transmission form.
 
 ---
+
+© 2026 Rohan Kohalli. Built with clean architecture and maintainable code.

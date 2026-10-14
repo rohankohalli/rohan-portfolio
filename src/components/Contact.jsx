@@ -55,13 +55,24 @@ export default function Contact() {
         }
 
         try {
+            const payload = {
+                name: formState.name,
+                email: formState.email,
+                subject: formState.subject,
+                message: formState.message,
+                _subject: formState.subject
+                    ? `[Portfolio] ${formState.subject}`
+                    : `[Portfolio] New message from ${formState.name}`,
+                _replyto: formState.email
+            };
+
             const response = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                     'Accept': 'application/json'
                 },
-                body: JSON.stringify(formState)
+                body: JSON.stringify(payload)
             });
 
             if (response.ok) {
@@ -69,7 +80,8 @@ export default function Contact() {
                 setFormState({ name: '', email: '', subject: '', message: '' });
             } else {
                 const data = await response.json();
-                throw new Error(data.error || 'Failed to send message.');
+                const errorMsg = data.errors?.map((err) => err.message).join(', ') || data.error || 'Failed to send message.';
+                throw new Error(errorMsg);
             }
         } catch (err) {
             console.error('Contact form error:', err);
